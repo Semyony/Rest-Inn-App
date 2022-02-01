@@ -12,7 +12,8 @@ const {
   validateID,
   getPropertiesByType,
   getPropertiesBestseller,
-  getPropertyByLocation
+  getPropertyByLocation,
+  validateProperty
 } = require("../controllers/propertyControllers");
 
 propertyRouter.get("/list", getPropertyList);
@@ -23,9 +24,9 @@ propertyRouter.get("/location/:location", getPropertyByLocation);
 
 propertyRouter.get("/bestsellers", getPropertiesBestseller);
 
-propertyRouter.post("/", addProperty);
+propertyRouter.post("/", validateProperty, addProperty);
 
-propertyRouter.put("/:id", validateID, editProperty);
+propertyRouter.put("/:id", validateID, validateProperty, editProperty);
 
 propertyRouter.delete("/:id", validateID, deleteProperty);
 

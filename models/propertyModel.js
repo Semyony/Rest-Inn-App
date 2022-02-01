@@ -2,10 +2,10 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const propertySchema = new Schema({
-  title: String,
-  rental_price: String,
-  description: String,
-  type: String,
+  title: {type: String, required: true},
+  rental_price: {type: String, required: true},
+  description: {type: String, required: true},
+  type: {type: String, required: true},
   house_rules: [String],
   amenities: {type: [String], required: true },
   location: {type: String, required: true},

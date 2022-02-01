@@ -6,16 +6,16 @@ const customerSchema = new Schema({
   last_name: {type: String, required: true},
   email: {type: String, required: true},
   password: {type: String, required: true},
-  phone_numbers: [String, String],
+  phone_numbers: [String, String]
 });
 
 const Customer = mongoose.model("Customer", customerSchema, "customer");
 
 module.exports = {
-  createCustomer: function (cust, callback) {
+  createCustomer: function (cust, callback,next) {
     let newCust = new Customer(cust);
     newCust.save(function (err, data) {
-      if (err) throw err;
+      if (err) return next(err);
       console.log(data)
       return callback(data);
     });
