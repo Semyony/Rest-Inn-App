@@ -1,6 +1,6 @@
 # Rest-Inn REST API App
 https://mysterious-caverns-77924.herokuapp.com/customer
-## _The Last Markdown Editor, Ever_
+## Description
 Rest-Inn is a new company that allows visitors to find and book vacation rentals, cabins, beach houses and unique homes, 
 around the world, specifically for short-term rental. 
 ## API
