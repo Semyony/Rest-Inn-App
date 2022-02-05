@@ -9,7 +9,7 @@ require('dotenv').config();
 const customerRouter = require("./Services/customerServices.js");
 const propertyRouter = require("./Services/propertyServices.js");
 
-const PORT = 8000;
+const PORT = process.env.PORT || 5000;
 connect();
 
 app.use(bodyParser.json());
