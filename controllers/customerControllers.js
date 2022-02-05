@@ -9,7 +9,7 @@ exports.addCustomer = function (req, res,next) {
   customerData.password = bcrypt.hashSync(req.body.password, 5);
   createCustomer(customerData, function (data) {
     res.status(200).json({ message: "successfully added" });
-  }, next);
+  }, next); 
 };
 
 exports.editCustomer = function (req, res) {
