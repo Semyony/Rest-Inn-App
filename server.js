@@ -16,6 +16,9 @@ app.use(bodyParser.json());
 app.use('/customer', customerRouter);
 app.use('/property', propertyRouter);
 
+app.get('/', (req, res)=>{
+  res.status(404).json({message: "Please, proceed to the routes shown in README.md file in order to access endpoints"});
+})
 app.listen(PORT, function () {
   console.log(PORT);
 });
