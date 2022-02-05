@@ -6,8 +6,8 @@ const mongoose = require("mongoose");
 require('dotenv').config();
 
 //custom module imports and port
-const customerRouter = require("./services/customerServices.js");
-const propertyRouter = require("./services/propertyServices.js");
+const customerRouter = require("./Services/customerServices.js");
+const propertyRouter = require("./Services/propertyServices.js");
 
 const PORT = 8000;
 connect();
