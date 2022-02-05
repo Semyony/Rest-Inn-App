@@ -1,6 +1,6 @@
 # Rest-Inn REST API App
 ## _The Last Markdown Editor, Ever_
-Rest-Inn is a new company that allows visitors to find and/or book vacation rentals, cabins, beach houses and unique homes, 
+Rest-Inn is a new company that allows visitors to find and book vacation rentals, cabins, beach houses and unique homes, 
 around the world, specifically for short-term rental. 
 ## API
 Allows mangaing Rest-Inn’s customers and properties. All HTTP requests are handled using Express.js framework based on RESTful API 
