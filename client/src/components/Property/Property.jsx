@@ -27,7 +27,7 @@ const Property = () => {
   console.log(id);
   const fetchTypes = () => {
     return axios
-      .get(`http://localhost:5000/property/${id}`)
+      .get(`http://mysterious-caverns-77924.herokuapp.com/property/${id}`)
       .then(({ data }) => {
         return data;
       })

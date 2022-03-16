@@ -18,7 +18,7 @@ const images = [
 ];
 const fetchTypes = () => {
   return axios
-    .get("http://localhost:5000/property/types")
+    .get("http://mysterious-caverns-77924.herokuapp.com/property/types")
     .then(({ data }) => {
       return data;
     })
