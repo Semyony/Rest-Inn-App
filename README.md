@@ -1,4 +1,8 @@
 # Rest-Inn REST API App
+in order to run website disable HTTP protection in firefox or chrome
+https://reverent-meninsky-b3f74a.netlify.app/
+
+API link:
 https://mysterious-caverns-77924.herokuapp.com/customer
 ## Description
 Rest-Inn is a new company that allows visitors to find and book vacation rentals, cabins, beach houses and unique homes, 
