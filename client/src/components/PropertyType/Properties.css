@@ -1,0 +1,34 @@
+.Property {
+  border-radius: 1rem !important;
+}
+
+.propertyImage {
+  display: block;
+  width: 20rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
+  margin: 0.5rem;
+}
+
+.PropertyList {
+  margin-top: 2rem;
+}
+
+.propertyDesc {
+  font-family: "Fredoka", sans-serif !important;
+  font-weight: lighter!important;
+}
+
+.propertyLocation {
+  font-family: "Fredoka", sans-serif !important;
+  font-weight: normal!important;
+}
+
+.PropertyTitle {
+  font-family: "Fredoka", sans-serif !important;
+}
+
+.PropertyPrice {
+  font-family: "Exo 2", sans-serif !important;
+}

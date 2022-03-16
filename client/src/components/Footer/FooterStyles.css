@@ -1,0 +1,75 @@
+.Box {
+  background: rgb(221, 221, 221);
+  margin-top: 50px;
+}
+
+.footerSec {
+  padding: 2rem calc((100vw - 1000px) / 2);
+}
+
+.footerItem {
+  padding-bottom: 0.2rem;
+  background-color: rgb(221, 221, 221)!important;
+}
+
+.footerItemName {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding-left: 0.5rem;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .footerSec {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .gridElemfooter {
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footerItem {
+    padding-bottom: 30px;
+    margin-left:15px;
+    border-bottom: 1px solid rgb(146, 146, 146);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .bottom {
+    width: max-content;
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .bottom {
+    border-top: 1px solid rgb(146, 146, 146);
+    padding-top: 10px;
+  }
+}
+
+.bottom {
+  width: max-content;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.listFooter{
+  color: black;
+  margin-left: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.listFooter:hover {
+  text-decoration: underline;
+}

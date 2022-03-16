@@ -1,0 +1,38 @@
+
+.propertyTypesSec {
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+}
+.propertTypesImage {
+  display: block;
+  width: 50vw;
+  height: 20vh;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.propertyType {
+  border-radius: 1rem !important;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+}
+
+.propertyTypeName {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding-left: 0.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .propertyTypesSec {
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .propertyTypeGrid {
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+}

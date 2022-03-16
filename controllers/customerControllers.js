@@ -3,13 +3,23 @@ const mongoose = require("mongoose");
 
 const { createCustomer, Customer } = require("../models/customerModel.js");
 
-exports.addCustomer = function (req, res,next) {
+exports.addCustomer = function (req, res, next) {
   const customerData = req.body;
-
-  customerData.password = bcrypt.hashSync(req.body.password, 5);
-  createCustomer(customerData, function (data) {
-    res.status(200).json({ message: "successfully added" });
-  }, next); 
+  Customer.findOne({ email: customerData.email }, function (err, customer) {
+    if (err) return next(err);
+    if (customer) {
+      res.status(404).json({ error: "User found" });
+    } else {
+      customerData.password = bcrypt.hashSync(req.body.password, 5);
+      createCustomer(
+        customerData,
+        function (data) {
+          res.status(200).json({ message: "successfully added" });
+        },
+        next
+      );
+    }
+  });
 };
 
 exports.editCustomer = function (req, res) {
@@ -60,13 +70,11 @@ exports.cannotFindCustomer = function (req, res, next) {
 };
 
 exports.validateCustomer = async function (req, res, next) {
-  try{
+  try {
     await Customer.validate(req.body);
-  } catch(err){
+  } catch (err) {
     res.status(404).json({ error: "Can't validate" });
   }
 
   next();
-}
-
-
+};

@@ -1,0 +1,42 @@
+.propertyBestsellerSec {
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+}
+.propertBestsellerImage {
+  display: block;
+  width: 50vw;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.propertyBestseller {
+  border-radius: 1rem !important;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.BestsellerName {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.2rem;
+  margin: 5px;
+  padding-left: 0.1rem;
+}
+
+.price {
+  float: right;
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .propertyTypesSec {
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .gridElemBestseller {
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+}

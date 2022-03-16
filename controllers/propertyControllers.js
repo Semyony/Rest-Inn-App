@@ -66,6 +66,7 @@ exports.getPropertyList = function (req, res) {
 };
 
 exports.getPropertyTypes = function (req, res) {
+  console.log(1);
   Property.find(function (err, results) {
     if (err) return next(err);
     let arrayTypes = [];
