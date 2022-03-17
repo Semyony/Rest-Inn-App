@@ -7,7 +7,7 @@ export const Heading = styled.div`
   padding: 0.5rem calc((100vw - 1000px) / 2);
   font-family: "Fredoka", sans-serif;
   font-size: 30px;
-  justify-content:center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
   @media screen and (max-width: 768px) {

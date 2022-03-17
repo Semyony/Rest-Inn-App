@@ -34,7 +34,7 @@ const SignUpMenu = () => {
 
   const postUser = () => {
     axios
-      .post("http://mysterious-caverns-77924.herokuapp.com/customer/", {
+      .post("https://mysterious-caverns-77924.herokuapp.com/customer/", {
         first_name: firstName,
         last_name: lastName,
         email: email,

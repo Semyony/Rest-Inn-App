@@ -14,7 +14,7 @@ import "./Properties.css";
 
 const fetchTypes = () => {
   return axios
-    .get("http://mysterious-caverns-77924.herokuapp.com/property/list")
+    .get("https://mysterious-caverns-77924.herokuapp.com/property/list")
     .then(({ data }) => {
       return data;
     })
