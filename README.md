@@ -1,6 +1,6 @@
 # Rest-Inn REST API App
 React Application: 
-rest-inn-vacations.netlify.app
+https://rest-inn-vacations.netlify.app
 
 API link:
 https://mysterious-caverns-77924.herokuapp.com/customer
