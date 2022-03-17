@@ -1,6 +1,6 @@
 # Rest-Inn REST API App
-in order to run website disable HTTP protection in firefox or chrome
-https://reverent-meninsky-b3f74a.netlify.app/
+React Application: 
+rest-inn-vacations.netlify.app
 
 API link:
 https://mysterious-caverns-77924.herokuapp.com/customer
